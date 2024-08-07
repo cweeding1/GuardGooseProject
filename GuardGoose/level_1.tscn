@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://co3s0r0thaa6y"]
+
+[ext_resource type="Script" path="res://Character.cs" id="1_ua607"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_y53iw"]
+size = Vector3(10, 0.5, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lp1f7"]
+size = Vector3(10, 0.5, 10)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_h0nec"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_71dy0"]
+
+[node name="Level1" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.975852, 0.218433, 0, -0.218433, 0.975852, 0, 2.10658, 10.194)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 0.99827, 0.0588011, 0, -0.0588011, 0.99827, 0, -0.0484524, -0.0556021)
+
+[node name="Floor" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor"]
+mesh = SubResource("BoxMesh_y53iw")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
+shape = SubResource("BoxShape3D_lp1f7")
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.62022, 0)
+script = ExtResource("1_ua607")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
+mesh = SubResource("CapsuleMesh_h0nec")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+shape = SubResource("CapsuleShape3D_71dy0")

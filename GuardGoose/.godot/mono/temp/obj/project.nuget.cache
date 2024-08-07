@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "eBZMHsgeN8LkxmlmKD7l7p75I2sqFf9G1V+8CCwdcdT5GZJPMUuROZQSyrukIS3xN70fNhnnzmN/WcVNhM8toA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Colton\\Desktop\\GuardGoose\\GuardGooseGame.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Colton\\.nuget\\packages\\godot.sourcegenerators\\4.2.2\\godot.sourcegenerators.4.2.2.nupkg.sha512",
+    "C:\\Users\\Colton\\.nuget\\packages\\godotsharp\\4.2.2\\godotsharp.4.2.2.nupkg.sha512",
+    "C:\\Users\\Colton\\.nuget\\packages\\godotsharpeditor\\4.2.2\\godotsharpeditor.4.2.2.nupkg.sha512"
+  ],
+  "logs": []
+}

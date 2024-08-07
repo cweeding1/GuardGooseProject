@@ -1,0 +1,17 @@
+C:\Users\Colton\Desktop\GuardGoose\.godot\mono\temp\bin\Debug\GuardGooseGame.deps.json
+C:\Users\Colton\Desktop\GuardGoose\.godot\mono\temp\bin\Debug\GuardGooseGame.runtimeconfig.json
+C:\Users\Colton\Desktop\GuardGoose\.godot\mono\temp\bin\Debug\GuardGooseGame.dll
+C:\Users\Colton\Desktop\GuardGoose\.godot\mono\temp\bin\Debug\GuardGooseGame.pdb
+C:\Users\Colton\Desktop\GuardGoose\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\Users\Colton\Desktop\GuardGoose\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\Users\Colton\Desktop\GuardGoose\.godot\mono\temp\obj\Debug\GuardGooseGame.csproj.AssemblyReference.cache
+C:\Users\Colton\Desktop\GuardGoose\.godot\mono\temp\obj\Debug\GuardGooseGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Colton\Desktop\GuardGoose\.godot\mono\temp\obj\Debug\GuardGooseGame.AssemblyInfoInputs.cache
+C:\Users\Colton\Desktop\GuardGoose\.godot\mono\temp\obj\Debug\GuardGooseGame.AssemblyInfo.cs
+C:\Users\Colton\Desktop\GuardGoose\.godot\mono\temp\obj\Debug\GuardGooseGame.csproj.CoreCompileInputs.cache
+C:\Users\Colton\Desktop\GuardGoose\.godot\mono\temp\obj\Debug\GuardGooseGame.csproj.CopyComplete
+C:\Users\Colton\Desktop\GuardGoose\.godot\mono\temp\obj\Debug\GuardGooseGame.dll
+C:\Users\Colton\Desktop\GuardGoose\.godot\mono\temp\obj\Debug\refint\GuardGooseGame.dll
+C:\Users\Colton\Desktop\GuardGoose\.godot\mono\temp\obj\Debug\GuardGooseGame.pdb
+C:\Users\Colton\Desktop\GuardGoose\.godot\mono\temp\obj\Debug\GuardGooseGame.genruntimeconfig.cache
+C:\Users\Colton\Desktop\GuardGoose\.godot\mono\temp\obj\Debug\ref\GuardGooseGame.dll
