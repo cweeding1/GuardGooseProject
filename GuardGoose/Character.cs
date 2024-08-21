@@ -1,5 +1,6 @@
 using Godot;
 using System;
+using System.Threading;
 
 public partial class Character : CharacterBody3D
 {
@@ -9,7 +10,18 @@ public partial class Character : CharacterBody3D
 	// Get the gravity from the project settings to be synced with RigidBody nodes.
 	public float gravity = ProjectSettings.GetSetting("physics/3d/default_gravity").AsSingle();
 
-	public override void _PhysicsProcess(double delta)
+	private Godot.Camera3D camera;
+	private Node3D cameraController;
+	private Node3D cameraTarget;
+
+    public override void _Ready()
+    {
+        cameraController = GetNode<Node3D>("Camera_Controller");
+        cameraTarget = cameraController.GetNode<Node3D>("Camera_Target");
+        camera = cameraTarget.GetNode<Godot.Camera3D>("Camera3D");
+    }
+
+    public override void _PhysicsProcess(double delta)
 	{
 		Vector3 velocity = Velocity;
 
@@ -38,5 +50,20 @@ public partial class Character : CharacterBody3D
 
 		Velocity = velocity;
 		MoveAndSlide();
+
+		cameraController.Position = LerpXaxisAndZaxis(cameraController.Position, Position, 0.06f);
 	}
+
+	private Vector3 LerpXaxisAndZaxis(Vector3 from, Vector3 to, float weight)
+	{
+		var returnTo = new Vector3()
+		{
+			X = from.X + (to.X - from.X) * weight,
+			Z = from.Z + (to.Z - from.Z) * weight,
+		};
+
+		return returnTo;
+	}
+
+	
 }

@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://c5w1h17m7uwln"]
+
+[ext_resource type="Script" path="res://Character.cs" id="1_rm7qc"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_h0nec"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_71dy0"]
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.62022, 0)
+script = ExtResource("1_rm7qc")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_h0nec")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_71dy0")
+
+[node name="Camera_Controller" type="Node3D" parent="."]
+top_level = true
+
+[node name="Camera_Target" type="Node3D" parent="Camera_Controller"]
+transform = Transform3D(1, 0, 0, 0, 0.931723, 0.36317, 0, -0.36317, 0.931723, 0, 3.23257, 6.68979)
+
+[node name="Camera3D" type="Camera3D" parent="Camera_Controller/Camera_Target"]
+transform = Transform3D(1, 0, 0, 0, 0.999426, 0.0338878, 0, -0.0338878, 0.999426, 0, 0.399107, -2.24306)
+current = true
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+modulate = Color(0.427848, 0.175124, 0.606306, 1)

@@ -1,2 +1,4 @@
 res://level_1.tscn
+res://Character.tscn
+res://Camera3D.cs
 res://Character.cs

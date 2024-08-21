@@ -93,11 +93,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Colton\\Desktop\\GuardGoose\\GuardGooseGame.csproj",
+      "projectUniqueName": "C:\\Users\\Colton\\Desktop\\GuardGooseProject\\GuardGoose\\GuardGooseGame.csproj",
       "projectName": "GuardGooseGame",
-      "projectPath": "C:\\Users\\Colton\\Desktop\\GuardGoose\\GuardGooseGame.csproj",
+      "projectPath": "C:\\Users\\Colton\\Desktop\\GuardGooseProject\\GuardGoose\\GuardGooseGame.csproj",
       "packagesPath": "C:\\Users\\Colton\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Colton\\Desktop\\GuardGoose\\.godot\\mono\\temp\\obj\\",
+      "outputPath": "C:\\Users\\Colton\\Desktop\\GuardGooseProject\\GuardGoose\\.godot\\mono\\temp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Colton\\AppData\\Roaming\\NuGet\\NuGet.Config"
