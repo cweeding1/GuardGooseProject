@@ -1,5 +1,5 @@
-DirectionalLight3D
 Sprite3D
+DirectionalLight3D
 Node3D
 Camera3D
 CollisionShape3D

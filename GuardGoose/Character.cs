@@ -9,16 +9,15 @@ public partial class Character : CharacterBody3D
     [Export] public float gravity = -9.8f;
     [Export] public float inputBufferTime = 0.2f;
 	private float jumpBufferTimeRemaining = 0.0f;
-
 	private Godot.Camera3D camera;
 	private Node3D cameraController;
 	private Node3D cameraTarget;
 
     public override void _Ready()
     {
-        cameraController = GetNode<Node3D>("Camera_Controller");
-        cameraTarget = cameraController.GetNode<Node3D>("Camera_Target");
-        camera = cameraTarget.GetNode<Godot.Camera3D>("Camera3D");
+        cameraController = GetNode<Node3D>("CharacterCameraNode");
+        cameraTarget = cameraController.GetNode<Node3D>("CharacterCameraTarget");
+        camera = cameraTarget.GetNode<Godot.Camera3D>("CharacterCamera");
     }
 
 	private void HandleInputBuffer(float delta)

@@ -1,5 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://co3s0r0thaa6y"]
+[gd_scene load_steps=5 format=3 uid="uid://co3s0r0thaa6y"]
 
+[ext_resource type="Texture2D" uid="uid://dvcmp7ractsc2" path="res://icon.svg" id="1_0hkwd"]
 [ext_resource type="PackedScene" uid="uid://c5w1h17m7uwln" path="res://Character.tscn" id="1_sdom2"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_y53iw"]
@@ -12,13 +13,17 @@ size = Vector3(10, 0.5, 10)
 
 [node name="Floor" type="StaticBody3D" parent="."]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor"]
+[node name="FloorMesh" type="MeshInstance3D" parent="Floor"]
 mesh = SubResource("BoxMesh_y53iw")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
+[node name="FloorCollisionShape" type="CollisionShape3D" parent="Floor"]
 shape = SubResource("BoxShape3D_lp1f7")
 
-[node name="CharacterBody3D" parent="." instance=ExtResource("1_sdom2")]
+[node name="Sprite3D" type="Sprite3D" parent="Floor"]
+transform = Transform3D(8, 0, 0, 0, -3.49691e-07, 8, 0, -8, -3.49691e-07, 0, 0.300141, 0)
+texture = ExtResource("1_0hkwd")
+
+[node name="Character" parent="." instance=ExtResource("1_sdom2")]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11.6202, 0)

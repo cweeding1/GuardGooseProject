@@ -1,7 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1724204796
+::res://::1724209679
 Camera3D.cs::CSharpScript::-1::1724200929::0::1::::<>Camera3D<>::
-Character.cs::CSharpScript::-1::1724204636::0::1::::<>CharacterBody3D<>::
-Character.tscn::PackedScene::6925515545115395835::1724204638::0::1::::<><>::res://Character.cs
-icon.svg::CompressedTexture2D::8638113620820193823::1723066286::1723066293::1::::<><>::
-level_1.tscn::PackedScene::5814426238539439302::1724204638::0::1::::<><>::uid://c5w1h17m7uwln::::res://Character.tscn
+Character.cs::CSharpScript::-1::1724209651::0::1::::<>CharacterBody3D<>::
+Character.tscn::PackedScene::6925515545115395835::1724209679::0::1::::<><>::res://Character.cs
+icon.svg::CompressedTexture2D::8638113620820193823::1723066286::1724209758::1::::<><>::
+level_1.tscn::PackedScene::5814426238539439302::1724209678::0::1::::<><>::uid://c5w1h17m7uwln::::res://Character.tscn

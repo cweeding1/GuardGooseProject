@@ -6,25 +6,21 @@
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_71dy0"]
 
-[node name="CharacterBody3D" type="CharacterBody3D"]
+[node name="Character" type="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.62022, 0)
 script = ExtResource("1_rm7qc")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="CharacterMesh" type="MeshInstance3D" parent="."]
 mesh = SubResource("CapsuleMesh_h0nec")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+[node name="CharacterCollisionShape" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_71dy0")
 
-[node name="Camera_Controller" type="Node3D" parent="."]
+[node name="CharacterCameraNode" type="Node3D" parent="."]
 top_level = true
 
-[node name="Camera_Target" type="Node3D" parent="Camera_Controller"]
-transform = Transform3D(1, 0, 0, 0, 0.881287, 0.472582, 0, -0.472582, 0.881287, 0, 7.59494, 7.53923)
+[node name="CharacterCameraTarget" type="Node3D" parent="CharacterCameraNode"]
+transform = Transform3D(1, 0, 0, 0, 0.997453, 0.0713234, 0, -0.0713234, 0.997453, 0, 4.30064, 9.30577)
 
-[node name="Camera3D" type="Camera3D" parent="Camera_Controller/Camera_Target"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+[node name="CharacterCamera" type="Camera3D" parent="CharacterCameraNode/CharacterCameraTarget"]
 current = true
-
-[node name="Sprite3D" type="Sprite3D" parent="."]
-modulate = Color(0.427848, 0.175124, 0.606306, 1)
