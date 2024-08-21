@@ -20,10 +20,10 @@ shape = SubResource("CapsuleShape3D_71dy0")
 top_level = true
 
 [node name="Camera_Target" type="Node3D" parent="Camera_Controller"]
-transform = Transform3D(1, 0, 0, 0, 0.931723, 0.36317, 0, -0.36317, 0.931723, 0, 3.23257, 6.68979)
+transform = Transform3D(1, 0, 0, 0, 0.881287, 0.472582, 0, -0.472582, 0.881287, 0, 7.59494, 7.53923)
 
 [node name="Camera3D" type="Camera3D" parent="Camera_Controller/Camera_Target"]
-transform = Transform3D(1, 0, 0, 0, 0.999426, 0.0338878, 0, -0.0338878, 0.999426, 0, 0.399107, -2.24306)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 current = true
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
