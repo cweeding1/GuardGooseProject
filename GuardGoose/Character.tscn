@@ -1,8 +1,31 @@
-[gd_scene load_steps=4 format=3 uid="uid://c5w1h17m7uwln"]
+[gd_scene load_steps=11 format=3 uid="uid://c5w1h17m7uwln"]
 
 [ext_resource type="Script" path="res://Character.cs" id="1_rm7qc"]
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_h0nec"]
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_pxbts"]
+noise_type = 2
+frequency = 0.0017
+cellular_distance_function = 2
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_16nbj"]
+noise = SubResource("FastNoiseLite_pxbts")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y4b3c"]
+albedo_color = Color(1, 0.505882, 0.0941176, 1)
+albedo_texture = SubResource("NoiseTexture2D_16nbj")
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_i8eib"]
+material = SubResource("StandardMaterial3D_y4b3c")
+
+[sub_resource type="Skin" id="Skin_cdxqk"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_2bk8l"]
+
+[sub_resource type="TorusMesh" id="TorusMesh_8j4c1"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_huigs"]
+top_radius = 0.115
+bottom_radius = 0.0
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_71dy0"]
 
@@ -11,7 +34,25 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.62022, 0)
 script = ExtResource("1_rm7qc")
 
 [node name="CharacterMesh" type="MeshInstance3D" parent="."]
-mesh = SubResource("CapsuleMesh_h0nec")
+mesh = SubResource("CapsuleMesh_i8eib")
+skin = SubResource("Skin_cdxqk")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="CharacterMesh"]
+transform = Transform3D(0.185, 0, 0, 0, 0.185, 0, 0, 0, 0.185, -0.115248, 0.525586, -0.466842)
+mesh = SubResource("SphereMesh_2bk8l")
+skeleton = NodePath("../MeshInstance3D")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterMesh"]
+transform = Transform3D(0.185, 0, 0, 0, 0.185, 0, 0, 0, 0.185, 0.113196, 0.527413, -0.485705)
+mesh = SubResource("SphereMesh_2bk8l")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="CharacterMesh"]
+transform = Transform3D(0.0870293, 0, 0, 0, 0.00625102, 0.0867091, 0, -0.0726765, 0.00745798, 0.00157139, 0.140349, -0.542121)
+mesh = SubResource("TorusMesh_8j4c1")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="CharacterMesh"]
+transform = Transform3D(0.270169, -1.6849e-06, -0.000218551, -0.000216438, 0.0101241, -0.268315, 3.07738e-05, 0.0859839, 0.0315926, -0.00478807, 0.37752, -0.587263)
+mesh = SubResource("CylinderMesh_huigs")
 
 [node name="CharacterCollisionShape" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_71dy0")
