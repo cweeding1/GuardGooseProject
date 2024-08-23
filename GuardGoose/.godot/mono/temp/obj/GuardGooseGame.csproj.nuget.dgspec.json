@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Colton\\Desktop\\GuardGooseProject\\GuardGoose\\GuardGooseGame.csproj": {}
+    "C:\\Users\\tanne\\Documents\\GuardGooseProject\\GuardGoose\\GuardGooseGame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Colton\\Desktop\\GuardGooseProject\\GuardGoose\\GuardGooseGame.csproj": {
+    "C:\\Users\\tanne\\Documents\\GuardGooseProject\\GuardGoose\\GuardGooseGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Colton\\Desktop\\GuardGooseProject\\GuardGoose\\GuardGooseGame.csproj",
+        "projectUniqueName": "C:\\Users\\tanne\\Documents\\GuardGooseProject\\GuardGoose\\GuardGooseGame.csproj",
         "projectName": "GuardGooseGame",
-        "projectPath": "C:\\Users\\Colton\\Desktop\\GuardGooseProject\\GuardGoose\\GuardGooseGame.csproj",
-        "packagesPath": "C:\\Users\\Colton\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Colton\\Desktop\\GuardGooseProject\\GuardGoose\\.godot\\mono\\temp\\obj\\",
+        "projectPath": "C:\\Users\\tanne\\Documents\\GuardGooseProject\\GuardGoose\\GuardGooseGame.csproj",
+        "packagesPath": "C:\\Users\\tanne\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tanne\\Documents\\GuardGooseProject\\GuardGoose\\.godot\\mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Colton\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\tanne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -32,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -62,12 +74,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.30, 6.0.30]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.30, 6.0.30]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.30, 6.0.30]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.423\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

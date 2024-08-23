@@ -1,12 +1,12 @@
 Sprite2D
 Camera2D
 Node2D
+MeshInstance3D
 Sprite3D
 DirectionalLight3D
 Node3D
 Camera3D
 CollisionShape3D
-MeshInstance3D
 CharacterBody3D
 StaticBody3D
 CollisionShape2D
