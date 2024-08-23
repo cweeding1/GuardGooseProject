@@ -23,6 +23,19 @@ shape = SubResource("BoxShape3D_lp1f7")
 transform = Transform3D(8, 0, 0, 0, -3.49691e-07, 8, 0, -8, -3.49691e-07, 0, 0.300141, 0)
 texture = ExtResource("1_0hkwd")
 
+[node name="Floor2" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0523, 0, 0)
+
+[node name="FloorMesh" type="MeshInstance3D" parent="Floor2"]
+mesh = SubResource("BoxMesh_y53iw")
+
+[node name="FloorCollisionShape" type="CollisionShape3D" parent="Floor2"]
+shape = SubResource("BoxShape3D_lp1f7")
+
+[node name="Sprite3D" type="Sprite3D" parent="Floor2"]
+transform = Transform3D(8, 0, 0, 0, -3.49691e-07, 8, 0, -8, -3.49691e-07, 0, 0.300141, 0)
+texture = ExtResource("1_0hkwd")
+
 [node name="Character" parent="." instance=ExtResource("1_sdom2")]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]

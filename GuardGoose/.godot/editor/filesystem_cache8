@@ -1,7 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1724209679
+::res://::1724452137
 Camera3D.cs::CSharpScript::-1::1724200929::0::1::::<>Camera3D<>::
 Character.cs::CSharpScript::-1::1724209651::0::1::::<>CharacterBody3D<>::
-Character.tscn::PackedScene::6925515545115395835::1724209679::0::1::::<><>::res://Character.cs
+Character.tscn::PackedScene::6925515545115395835::1724452020::0::1::::<><>::res://Character.cs
 icon.svg::CompressedTexture2D::8638113620820193823::1723066286::1724209758::1::::<><>::
-level_1.tscn::PackedScene::5814426238539439302::1724209678::0::1::::<><>::uid://c5w1h17m7uwln::::res://Character.tscn
+level_1.tscn::PackedScene::5814426238539439302::1724452020::0::1::::<><>::uid://dvcmp7ractsc2::::res://icon.svg<>uid://c5w1h17m7uwln::::res://Character.tscn
+lock_scene.cs::CSharpScript::-1::1724451922::0::1::::<>Node2D<>::
+lock_scene.tscn::PackedScene::8728457934761164327::1724452020::0::1::::<><>::res://lock_scene.cs<>uid://216k5iglguc2::::res://Sprites/LockSprite.png<>uid://tqwvbtqj0il8::::res://Sprites/KeySprite.png
+::res://Sprites/::1724452137
+KeySprite.png::CompressedTexture2D::6368732212073018886::1724452134::1724452138::1::::<><>::
+LockSprite.png::CompressedTexture2D::1950674272893748815::1724443709::1724443712::1::::<><>::
