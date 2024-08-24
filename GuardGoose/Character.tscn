@@ -34,6 +34,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.62022, 0)
 script = ExtResource("1_rm7qc")
 
 [node name="CharacterMesh" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
 mesh = SubResource("CapsuleMesh_i8eib")
 skin = SubResource("Skin_cdxqk")
 
@@ -61,7 +62,8 @@ shape = SubResource("CapsuleShape3D_71dy0")
 top_level = true
 
 [node name="CharacterCameraTarget" type="Node3D" parent="CharacterCameraNode"]
-transform = Transform3D(1, 0, 0, 0, 0.997453, 0.0713234, 0, -0.0713234, 0.997453, 0, 4.30064, 9.30577)
+transform = Transform3D(1, 0, 0, 0, 0.954833, 0.297142, 0, -0.297142, 0.954833, 0, 2.47434, 9.43636)
 
 [node name="CharacterCamera" type="Camera3D" parent="CharacterCameraNode/CharacterCameraTarget"]
+transform = Transform3D(1, 0, 0, 0, 0.983093, 0.183111, 0, -0.183111, 0.983093, 0, 3.4584, -0.246021)
 current = true

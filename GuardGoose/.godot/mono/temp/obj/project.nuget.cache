@@ -1,15 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "3sjPGa/lGXQ=",
+  "dgSpecHash": "wdYbpNIAVrm4eohky2xzRJlJelKp/Bixs7A8eLvV2jFZQrjhB3UQN2ZLcSSfH6wegmSjJ/fT1bi+cD6SrcTTXQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tanne\\Documents\\GuardGooseProject\\GuardGoose\\GuardGooseGame.csproj",
+  "projectFilePath": "C:\\Users\\Colton\\Desktop\\GuardGooseProject\\GuardGoose\\GuardGooseGame.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\tanne\\.nuget\\packages\\godot.sourcegenerators\\4.2.2\\godot.sourcegenerators.4.2.2.nupkg.sha512",
-    "C:\\Users\\tanne\\.nuget\\packages\\godotsharp\\4.2.2\\godotsharp.4.2.2.nupkg.sha512",
-    "C:\\Users\\tanne\\.nuget\\packages\\godotsharpeditor\\4.2.2\\godotsharpeditor.4.2.2.nupkg.sha512",
-    "C:\\Users\\tanne\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.30\\microsoft.netcore.app.ref.6.0.30.nupkg.sha512",
-    "C:\\Users\\tanne\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.30\\microsoft.windowsdesktop.app.ref.6.0.30.nupkg.sha512",
-    "C:\\Users\\tanne\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.30\\microsoft.aspnetcore.app.ref.6.0.30.nupkg.sha512"
+    "C:\\Users\\Colton\\.nuget\\packages\\godot.sourcegenerators\\4.2.2\\godot.sourcegenerators.4.2.2.nupkg.sha512",
+    "C:\\Users\\Colton\\.nuget\\packages\\godotsharp\\4.2.2\\godotsharp.4.2.2.nupkg.sha512",
+    "C:\\Users\\Colton\\.nuget\\packages\\godotsharpeditor\\4.2.2\\godotsharpeditor.4.2.2.nupkg.sha512"
   ],
   "logs": []
 }

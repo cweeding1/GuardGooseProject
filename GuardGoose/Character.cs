@@ -77,6 +77,7 @@ public partial class Character : CharacterBody3D
 		{
 			X = from.X + (to.X - from.X) * weight,
 			Z = from.Z + (to.Z - from.Z) * weight,
+            Y = 0
 		};
 
 		return returnTo;
