@@ -2,5 +2,5 @@ res://level_1.tscn
 res://Character.tscn
 res://lock_scene.tscn
 res://Camera3D.cs
-res://lock_scene.cs
 res://Character.cs
+res://lock_scene.cs
