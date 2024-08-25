@@ -14,6 +14,7 @@ size = Vector3(10, 0.5, 10)
 [node name="Floor" type="StaticBody3D" parent="."]
 
 [node name="FloorMesh" type="MeshInstance3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 mesh = SubResource("BoxMesh_y53iw")
 
 [node name="FloorCollisionShape" type="CollisionShape3D" parent="Floor"]
@@ -24,12 +25,14 @@ transform = Transform3D(8, 0, 0, 0, -3.49691e-07, 8, 0, -8, -3.49691e-07, 0, 0.3
 texture = ExtResource("1_0hkwd")
 
 [node name="Floor2" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0523, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.5824, 0, -0.701784)
 
 [node name="FloorMesh" type="MeshInstance3D" parent="Floor2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 mesh = SubResource("BoxMesh_y53iw")
 
 [node name="FloorCollisionShape" type="CollisionShape3D" parent="Floor2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_lp1f7")
 
 [node name="Sprite3D" type="Sprite3D" parent="Floor2"]

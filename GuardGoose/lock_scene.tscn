@@ -22,3 +22,11 @@ texture = ExtResource("3_q61ul")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(3, 3)
+
+[node name="KeyLabel" type="Label" parent="."]
+texture_filter = 1
+offset_left = -186.0
+offset_top = -106.0
+offset_right = -104.0
+offset_bottom = -83.0
+text = "KEYS:"
