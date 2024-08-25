@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GuardGooseGame")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+557e540c17cac1b8c16addc60ec0bb1eb593a51a")]
 [assembly: System.Reflection.AssemblyProductAttribute("GuardGooseGame")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GuardGooseGame")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
