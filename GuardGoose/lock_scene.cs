@@ -6,7 +6,6 @@ public partial class lock_scene : Node2D
 	private Node2D lockRoot;
 	private Sprite2D keySprite;
 	private Label keyLabel;
-   
     private float angle;
     private float length = 200;
     private float width = 25;
@@ -14,8 +13,7 @@ public partial class lock_scene : Node2D
 
 
 	private int keys = 3;
-
-
+    {
         int rnd = new Random().Next(0,360);
         angle = Mathf.DegToRad(rnd);
 
@@ -56,7 +54,7 @@ public partial class lock_scene : Node2D
 			if (Geometry2D.IsPointInPolygon(mousePosition, rectanglePoints))
             {
                 GD.Print("IN");
-                _GenerateNewSmallerPickArea();
+                _GeneratePickArea(width*0.8, length*0.8);
             }
             else
             {
@@ -86,19 +84,5 @@ public partial class lock_scene : Node2D
         Vector2 corner4 = direction * length - perpendicular;
         
         return new Vector2[] { corner1, corner3, corner4, corner2 };
-    }
-
-    private void _GenerateNewSmallerPickArea()
-    {
-        // Reduce the size of the lock picking area
-        width *= 0.8f;
-        length *= 0.8f;
-
-        // Generate new points for the smaller area
-        points = _GeneratePickArea(width, length);
-
-        // Redraw the scene to reflect the new area
-        GD.Print("Redrawing");
-        
     }
 }
